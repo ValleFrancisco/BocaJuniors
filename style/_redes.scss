@@ -1,5 +1,5 @@
 footer{
-  background-color: black;
+  background-color: rgb(24, 24, 143);
   color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,14 +7,30 @@ footer{
 
   }
 
-  $redes:(
-    twitter: #55acee,
-    facebook: #3a5795,
-    instagram: #c25e30
-  );
-  @each $red, $color in $redes {
-    .btn--#{$red}{
-      background-color: $color;
-    }
+  .buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgb(139, 139, 21);
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px black;
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
     
+  .tituloredes{
+    color: rgb(139, 139, 21);
   }
