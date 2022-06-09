@@ -1,12 +1,15 @@
-body {
+.fondoyletras, body, .pagina {
   background-color: #18188f;
   color: #8b8b15;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.pagina {
-  background-color: #08086d;
-  color: #666613;
+.sombra, .fotojugador, .form-control {
+  -webkit-box-shadow: 0px 0px 30px black;
+          box-shadow: 0px 0px 30px black;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #redes {
@@ -18,31 +21,29 @@ body {
   margin-right: 40px;
 }
 
+.formulario {
+  text-align: center;
+}
+
+.fotojugador {
+  width: 150px;
+  height: 112.5px;
+}
+
+.form-control {
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+  width: 25%;
+}
+
 .tituloFoto {
   text-align: left;
   margin-left: 300px;
 }
 
-.foto {
-  text-align: left;
-  margin-left: 50px;
-}
-
-.foto .epigrafe {
-  text-align: left;
-  font-size: small;
-  margin-left: 175px;
-}
-
-.video {
-  text-align: right;
-  margin-top: -335px;
-  margin-right: 50px;
-}
-
 .parrafoprincipal {
-  margin-left: 100px;
-  margin-right: 100px;
+  text-align: center;
 }
 
 @media (min-width: 767px) {
@@ -52,13 +53,39 @@ body {
     -webkit-transition-duration: 2s;
             transition-duration: 2s;
   }
+  .foto {
+    text-align: left;
+    margin-left: 50px;
+  }
+  .foto .epigrafe {
+    text-align: left;
+    font-size: small;
+    margin-left: 175px;
+  }
+  .video {
+    text-align: right;
+    margin-top: -335px;
+    margin-right: 50px;
+  }
 }
 
 footer {
+  background-color: black;
   color: white;
-  text-align: right;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 50px;
-  margin-right: 40px;
+}
+
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #c25e30;
 }
 /*# sourceMappingURL=style.css.map */

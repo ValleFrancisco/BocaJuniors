@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ayuda boca juniors socios">
+    <meta name="description" content="ayuda inmediata para los socios de boca juniors">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Ayuda</title>
@@ -40,50 +42,64 @@
 		<h1 class="text-center ayuda">AYUDA INMEDIATA</h1>
 	</section>
 	<!-- formulario de contacto -->
-	<section class="text-center formulario">
-		<article>
-			<form action="#">
-				<input type="text" placeholder="Ingrese su nombre"><br>
-				<label for="email">Escriba su email:
-					<input type="email" placeholder="aaa@gmail.com"  name="email"><br>
-				</label>
-				<label for="Observaciones"> Consulta:<br>
-					<textarea placeholder="Escribi tu consulta"></textarea>
-				</label> <br>
-				<input type="number" placeholder="Nro de Socio"><br>
-                <label for="Numer">Escriba su celular:
-                    <input type="number" placeholder="Sin 0 ni 15"><br>
-                </label>
+	<section class="formulario">
+  <form class="formulario" action="/contacto" method="post"><div class="row">
+    <div class="col">
+        <select class="form-control" required="required" placeholder="-- Select Area --" name="Contact[area]" id="Contact_area">
+             <option value="">-Seleciona tipo de socio-</option>
+              <option value="0">Socio activo</option>
+              <option value="1">Socio adherente</option>
+              <option value="2">Socio internacional</option>
+          </select>										
+        	</div>
+             </div>
 
-				<div><p>Tipo de socio</p>
-					<div>Adherente
-						<input type="radio" name="lado" value="adherente">
-					</div>
-					<div>Activo
-						<input type="radio" name="lado" value="activo">
-					</div>
-				</div>
-				<p>Su consulta es..?</p>
-				<select name="letra" id="letra"> 
-					<option value="queja">Queja</option>
-					<option value="consulta">Consulta</option>
-					<option value="opinion">Opinion</option>
-				</select>
-				<div>Queres recibir info sobre nosotros?
-				<input type="checkbox" name="acepta" value="1"></div>
-				<input type="submit" value="Si quiero">
-				<input type="reset" value="Reiniciar formulario">
-			</form>
-		</article>
-	</section>
+     <div class="row">
+         <div class="col">
+        <input class="form-control" required="required" placeholder="Nombre y apellido*" name="Contact[name]" id="Contact_name" type="text">					
+      		</div>
+      </div>
 
+     <div class="row">
+     <div class="col">
+      <input class="form-control" placeholder="Domicilio" name="Contact[domicilio]" id="Contact_domicilio" type="text">						
+    					</div>
+     </div>
 
+  <div class="row">
+    <div class="col">
+      <input class="form-control" placeholder="Provincia" name="Contact[provincia]" id="Contact_provincia" type="text">						
+    					</div>
+   </div>
 
-    <footer>
+   <div class="row">
+    <div class="col">
+      <input class="form-control" placeholder="Localidad" name="Contact[localidad]" id="Contact_localidad" type="text">						
+    					</div>
+    </div>
+
+<div class="row">
+    <div class="col">
+      <input class="form-control" required="required" placeholder="Dirección de e-mail*" name="Contact[email]" id="Contact_email" type="text">		
+    	</div>
+   </div>
+
+   <div class="row">
+    <div class="col">
+      <textarea class="form-control" required="required" placeholder="Comentarios*" rows="6" name="Contact[comentarios]" id="Contact_comentarios"></textarea>						
+		</div>
+    </div>
+
+    <button type="submit" class="btn boton">ENVIAR<span class="triang"></span></button>
+
+    </form>
+  </section>
+
+    <footer class=>
         <h3>Nuestras redes</h3>
-        <h4>Instragram: @bocajrsoficial</h4>
-        <h4>Twitter: @BocaJrsOficial</h4>
-        <h4>Facebook: @BocaJuniors</h4>
+        <div><input type="button" value="instagram" class="btn--instagram"></div>
+        <div><input type="button" value="twitter" class="btn--twitter"></div>
+        <div><input type="button" value="facebook" class="btn--facebook"></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
