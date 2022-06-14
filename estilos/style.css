@@ -67,11 +67,35 @@ body {
     text-align: right;
     margin-top: 45px;
   }
-  html {
-    height: 100%;
+  .buttons {
+    min-width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  body {
-    min-height: 100%;
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #8b8b15;
+    color: #f1f1f1;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 30px black;
+            box-shadow: 0px 0px 30px black;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  .buttons a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .tituloredes {
+    color: #8b8b15;
   }
 }
 
@@ -93,6 +117,7 @@ footer {
 }
 
 .buttons a {
+  padding: 0% 5% 0% 5%;
   text-decoration: none;
   font-size: 28px;
   width: 60px;
