@@ -67,6 +67,12 @@ body {
     text-align: right;
     margin-top: 45px;
   }
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
 }
 
 footer {
