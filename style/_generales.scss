@@ -5,6 +5,10 @@
 .sombra{
     box-shadow: 0px 0px 30px black;
 }
+.medidas{
+    width: 189px ;
+    height: 106.31px ;
+}
 @mixin tamaño ($width, $height) {
         width: $width;
         height: $height;
@@ -39,17 +43,28 @@ body{
     width: 25%;
 }
 .foto{
-    width: "189" ;
-    height: "106.31" ;
+    @extend.sombra;
+    @extend.medidas;
+    max-width: 480px;
+    max-height: 320px;
     min-width: 300px;
 }
 .video{
-    width: "189" ;
-    height: "106.31" ;
+    @extend.sombra;
+    text-align: center;
+    @extend.medidas;
+    max-width: 480px;
+    max-height: 320px;
     min-width: 300px;
 }
 .videoHimno{
-    width: "189" ;
-    height: "106.31" ;
+    @extend.sombra;
+    text-align: center;
+    @extend.medidas;
+    max-width: 480px;
+    max-height: 320px;
     min-width: 300px;
   }
+.tituloFoto{
+    text-align: center;
+}

@@ -3,11 +3,13 @@
          transform: scale(1.5) translateY(-30px);
          transition-duration: 2s;
     }
+    .tituloFoto{
+      text-align: left;
+      margin-left: 250px;
+    }
     .foto{
-      max-width: 480px;
-      max-height: 320px;
-      width: "453.6" ;
-      height: "255.15";
+        width:560px ;
+        height:315px;
         text-align: left;
         margin-left: 0px;
         .epigrafe{
@@ -17,18 +19,15 @@
            }
       }
       .videoHimno{
-        max-width: 480px;
-        max-height: 320px;
-        width: "453.6" ;
-        height: "255.15";
+        text-align: center;
+        width:560px ;
+        height:315px;
       }
       .video{
-        max-width: 480px;
-        max-height: 320px;
-        width: "453.6" ;
-        height: "255.15";
+        width:560px;
+        height:315px;
         text-align: right;
-        margin-top: 45px;
+        margin-top: 50px;
        }
      
     .buttons {
