@@ -9,8 +9,8 @@
 }
 
 .medidas, .foto, .video, .videoHimno {
-  width: 189px;
-  height: 106.31px;
+  width: 283.5px;
+  height: 159.46px;
 }
 
 body {
@@ -45,21 +45,18 @@ body {
 .foto {
   max-width: 480px;
   max-height: 320px;
-  min-width: 300px;
 }
 
 .video {
   text-align: center;
   max-width: 480px;
   max-height: 320px;
-  min-width: 300px;
 }
 
 .videoHimno {
   text-align: center;
   max-width: 480px;
   max-height: 320px;
-  min-width: 300px;
 }
 
 .tituloFoto {

@@ -47,7 +47,6 @@ body{
     @extend.medidas;
     max-width: 480px;
     max-height: 320px;
-    min-width: 300px;
 }
 .video{
     @extend.sombra;
@@ -55,7 +54,6 @@ body{
     @extend.medidas;
     max-width: 480px;
     max-height: 320px;
-    min-width: 300px;
 }
 .videoHimno{
     @extend.sombra;
@@ -63,7 +61,6 @@ body{
     @extend.medidas;
     max-width: 480px;
     max-height: 320px;
-    min-width: 300px;
   }
 .tituloFoto{
     text-align: center;
