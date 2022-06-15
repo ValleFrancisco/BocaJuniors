@@ -37,6 +37,14 @@ body {
   width: 25%;
 }
 
+.foto {
+  min-width: 300px;
+}
+
+.video {
+  min-width: 300px;
+}
+
 .tituloFoto {
   text-align: left;
   margin-left: 200px;
