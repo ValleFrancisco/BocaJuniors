@@ -63,6 +63,8 @@ body {
             transition-duration: 2s;
   }
   .foto {
+    width: "504";
+    height: "283.5";
     text-align: left;
     margin-left: 0px;
   }
@@ -72,6 +74,8 @@ body {
     margin-left: 0px;
   }
   .video {
+    width: "504";
+    height: "283.5";
     text-align: right;
     margin-top: 45px;
   }
