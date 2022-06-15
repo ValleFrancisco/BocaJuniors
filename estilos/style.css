@@ -47,7 +47,7 @@ body {
   margin: 0% 5% 0% 5%;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   .fotojugador:hover {
     -webkit-transform: scale(1.5) translateY(-30px);
             transform: scale(1.5) translateY(-30px);
@@ -68,7 +68,7 @@ body {
     margin-top: 45px;
   }
   .buttons {
-    min-width: 700px;
+    min-width: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -108,7 +108,7 @@ footer {
 }
 
 .buttons {
-  min-width: 700px;
+  min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
